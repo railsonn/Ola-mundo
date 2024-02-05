@@ -1,0 +1,109 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('./img/2017-10-27-06-39-01.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#container {
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid rgba(0, 60, 255, 0.514);
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgba(240, 244, 245, 0.798);
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#information {
+    padding: 10px;
+}
+
+#cep {
+    width: 170px;
+    height: 25px;
+    padding: 5px 15px 5px 15px;
+    outline: none;
+    border-radius: 4px;
+    border: 0.5px solid rgb(212, 212, 212);
+    background-color: rgb(240, 240, 240);
+    box-shadow: -1px 1px 0px gray;
+}
+
+#cont-titulo  #titulo {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+#results {
+    width: 250px;
+    max-height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.information {
+    min-width: 80px;
+    height: 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#caixa-de-resultados {
+    position: absolute;
+    top: 32px;
+    left: 235px;
+    border: 2px solid rgb(0, 0, 180);
+    border-radius: 2px;
+}
+
+#butResult {
+    width: 200px;
+    font-size: 15px;
+    padding: 6px 15px 6px 15px;
+    letter-spacing: 1.2px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0px rgb(0, 0, 94);
+    background-color: rgb(0, 0, 180);
+    color: white;
+    text-transform: capitalize;
+    position: relative;
+    top: 7.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 100ms ease-in-out;
+    visibility: hidden;
+    outline: none;
+}
+
+#butResult:hover {
+    text-shadow: -1px 1px 0px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 126);
+}
+
+#butResult:active {
+    box-shadow: 1px 1px 0 rgb(0, 0, 94);
+    transform: translate(-49%, 2px);
+}
+
+
+@media (max-width: 1643px) {
+    body {
+       background-size: inherit;
+    }
+}

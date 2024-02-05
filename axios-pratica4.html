@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+    integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer">
+   </script>
+       <script src="./javascript/axios-pratica4.js" defer></script>
+       <link rel="stylesheet" href="/stylesheets/axios-pratica4.css">
+</head>
+<body>
+    <div id="container">
+        
+        <div id="information">
+            <input type="number" id="cep" placeholder="01153-000" name="cep">
+        </div>
+
+        <select id="caixa-de-resultados" onchange="javascript:mostraAlerta(this);">
+            <option value="" id="ceps" selected>Ceps</option>
+        </select>
+
+        <form id="form-resultado">
+
+            <div id="results">
+                <label for="">Bairro:</label> 
+                <p id="bairro" class="information"></p>
+            </div>
+
+            <div id="results">
+                <label for="">Complemento:</label>
+                <p id="complemento" class="information"></p>
+            </div>
+
+            <div id="results">
+                <label for="">DDD:</label>
+                <p id="ddd" class="information"></p>
+            </div>
+
+            <div id="results">
+                <label for="">Cidade:</label>
+                <p id="localidade" class="information"></p>
+            </div>
+
+            <div id="results">
+                <label for="">UF:</label>
+                <p id="uf" class="information"></p>
+            </div>
+        
+            <div id="button-result">
+                <input type="button" value="buscar" id="butResult">
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
